@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시흥XZ청년단 회원 비교</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/api/placeholder/50/50" alt="시흥XZ청년단 로고">
+            <div class="logo-text">시흥XZ청년단</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#membership-comparison">회원 비교</a></li>
+                <li><a href="#activities">활동 소개</a></li>
+                <li><a href="#companies">회원사</a></li>
+                <li><a href="#benefits">혜택 안내</a></li>
+                <li><a href="#signup" class="cta-button">가입하기</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>시흥시의 미래를 선도하는 젊은 기업가</h1>
+            <p>X세대부터 Z세대까지, 시흥시 관내 청년 기업가 모임</p>
+            <a href="#membership-comparison" class="cta-button">회원 혜택 보기</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="membership-comparison" class="comparison-section">
+            <h2 class="section-title">회원 유형 비교</h2>
+            <p class="section-description">나에게 맞는 회원 유형을 선택하세요</p>
+            
+            <div class="membership-cards">
+                <div class="membership-card">
+                    <div class="card-header">
+                        <h3>온라인 회원</h3>
+                        <p class="price">무료</p>
+                        <p class="note">* 오프라인 회의 참여 시 5만원 참여비 발생</p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check"></i> AI를 활용한 지원사업 찾기</li>
+                            <li><i class="fas fa-check"></i> B TO B 비즈니스 연계</li>
+                            <li><i class="fas fa-check"></i> 청년단 행사 관련 소식 제공</li>
+                            <li><i class="fas fa-check"></i> 연말 포상 기회</li>
+                            <li class="not-included"><i class="fas fa-times"></i> 명절 선물 나눔</li>
+                            <li class="not-included"><i class="fas fa-times"></i> 월례회/행사 저녁 식대 제공</li>
+                            <li class="not-included"><i class="fas fa-times"></i> 인맥 교류/회사 방문</li>
+                            <li class="not-included"><i class="fas fa-times"></i> 다양한 소모임 활동</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="card-button">온라인 회원 가입</a>
+                    </div>
+                </div>
+
+                <div class="membership-card featured">
+                    <div class="ribbon">추천</div>
+                    <div class="card-header">
+                        <h3>정회원</h3>
+                        <p class="price">월 50,000원</p>
+                        <p class="price-annual"><span>600,000원</span> 550,000원/년 <span class="discount-badge">8.3% 할인</span></p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check"></i> <strong>온라인 회원 혜택 모두 포함</strong></li>
+                            <li><i class="fas fa-check"></i> <strong>명절 선물 나눔</strong></li>
+                            <li><i class="fas fa-check"></i> <strong>월례회/행사 저녁 식대 제공</strong></li>
+                            <li><i class="fas fa-check"></i> <strong>인맥 교류/회사 방문</strong></li>
+                            <li><i class="fas fa-check"></i> <strong>다양한 소모임 활동</strong></li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <div class="billing-toggle">
+                            <span class="toggle-label active">월간 결제</span>
+                            <div class="toggle-switch"></div>
+                            <span class="toggle-label">연간 결제 (할인)</span>
+                        </div>
+                        <a href="#" class="card-button featured-button">정회원 가입</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 한정 이벤트 섹션 -->
+        <section class="limited-event-section">
+            <div class="limited-badge">기한 한정</div>
+            <div class="particles" id="particles">
+                <!-- 배경 파티클 효과 -->
+            </div>
+            <div class="event-content">
+                <h2 class="event-title">특별 네트워킹 기회</h2>
+                <p class="event-subtitle">지금 가입하시면 얻을 수 있는 1회성 특별 혜택</p>
+                
+                <div class="event-features">
+                    <div class="event-feature">
+                        <div class="feature-title">
+                            <i class="fas fa-user-tie"></i>
+                            1타 강사 사업 노하우
+                        </div>
+                        <p class="feature-description">
+                            청년 창업가들에게 인기 있는 김태우 회장의 사업 노하우와 경험을 직접 배울 수 있는 특별한 기회입니다.
+                        </p>
+                    </div>
+                    
+                    <div class="event-feature">
+                        <div class="feature-title">
+                            <i class="fas fa-utensils"></i>
+                            1:1 식사 시간 제공
+                        </div>
+                        <p class="feature-description">
+                            김태우 회장과의 1:1 식사 시간을 통해 개인적인 질문과 비즈니스 고민에 대한 맞춤형 조언을 받을 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="countdown-container">
+                    <h3 class="countdown-title">이 특별 혜택은 다음 시간까지만 제공됩니다</h3>
+                    <div class="flip-clock">
+                        <div class="flip-unit">
+                            <div class="flip-card">
+                                <div class="flip-card-front">2</div>
+                                <div class="flip-card-back">1</div>
+                            </div>
+                            <div class="unit-label">일</div>
+                        </div>
+                        <div class="flip-divider">:</div>
+                        <div class="flip-unit">
+                            <div class="flip-card">
+                                <div class="flip-card-front">0</div>
+                                <div class="flip-card-back">9</div>
+                            </div>
+                            <div class="unit-label">시간</div>
+                        </div>
+                        <div class="flip-divider">:</div>
+                        <div class="flip-unit">
+                            <div class="flip-card">
+                                <div class="flip-card-front">5</div>
+                                <div class="flip-card-back">4</div>
+                            </div>
+                            <div class="unit-label">분</div>
+                        </div>
+                        <div class="flip-divider">:</div>
+                        <div class="flip-unit">
+                            <div class="flip-card">
+                                <div class="flip-card-front">3</div>
+                                <div class="flip-card-back">2</div>
+                            </div>
+                            <div class="unit-label">초</div>
+                        </div>
+                    </div>
+                    <p style="margin-top: 10px; font-size: 0.9em;">* 한국 시간 기준 2025년 3월 31일 24시까지</p>
+                </div>
+                
+                <a href="#" class="cta-button">지금 바로 혜택 받기</a>
+            </div>
+        </section>
+
+        <!-- 활동 소개 섹션 -->
+        <section id="activities" class="activities-section">
+            <h2 class="section-title">시흥XZ청년단 활동 소개</h2>
+            <p class="section-description">청년들의 성장과 네트워킹을 위한 다양한 활동</p>
+            
+            <div class="activities-container">
+                <div class="activity-item">
+                    <div class="activity-image">
+                        <img src="/api/placeholder/600/400" alt="XZ청년단 창단식">
+                    </div>
+                    <div class="activity-content">
+                        <h3 class="activity-title">XZ청년단 창단식</h3>
+                        <p class="activity-date">2024년 8월 예정</p>
+                        <p class="activity-description">
+                            시흥XZ청년단의 공식적인 출범을 알리는 행사입니다. 2022년 12월부터 협회 창설을 위한 간담회를 시작으로 
+                            17차에 걸친 준비 과정을 거쳐 2024년 8월에 정식 창단식을 개최할 예정입니다. 
+                            지역 내 청년 기업가들과 지역 사회 인사들이 함께하는 네트워킹의 장이 될 것입니다.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="activity-item">
+                    <div class="activity-image">
+                        <img src="/api/placeholder/600/400" alt="청년 네트워킹데이">
+                    </div>
+                    <div class="activity-content">
+                        <h3 class="activity-title">청년 네트워킹데이</h3>
+                        <p class="activity-date">매월 마지막주 목요일</p>
+                        <p class="activity-description">
+                            시흥시 청년들이 함께 모여 서로의 경험과 지식을 나누는 정례 모임입니다. 
+                            제4조에 따라 매월 마지막주 목요일 17시에 개최되며, 다양한 분야의 청년들이 모여 
+                            인맥을 쌓고 협업 기회를 발굴합니다. 정회원은 모든 행사에 무료로 참여할 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="activity-item">
+                    <div class="activity-image">
+                        <img src="/api/placeholder/600/400" alt="대부도 워크숍">
+                    </div>
+                    <div class="activity-content">
+                        <h3 class="activity-title">대부도 워크숍</h3>
+                        <p class="activity-date">2024년 5월 개최</p>
+                        <p class="activity-description">
+                            회원사 간의 결속력을 다지고 심도 있는 교류를 위한 1박 2일 워크숍입니다. 
+                            대부도 펜션에서 진행되며, 팀 빌딩 활동, 비전 공유 세션, 
+                            그리고 회원사 간 협업 가능성 탐색을 위한 다양한 프로그램이 마련됩니다.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="activity-item">
+                    <div class="activity-image">
+                        <img src="/api/placeholder/600/400" alt="MOU 체결식">
+                    </div>
+                    <div class="activity-content">
+                        <h3 class="activity-title">XZ청년단 & 소부장협회 MOU 체결</h3>
+                        <p class="activity-date">협약 완료</p>
+                        <p class="activity-description">
+                            시흥XZ청년단과 소부장협회 간의 상호 협력 및 발전을 위한 업무협약(MOU) 체결식입니다. 
+                            이를 통해 양 기관은 청년 기업가 지원, 정보 공유, 공동 행사 개최 등 
+                            다양한 분야에서 협력하여 시흥시 경제 발전에 기여하고자 합니다.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="activity-item">
+                    <div class="activity-image">
+                        <img src="/api/placeholder/600/400" alt="송년회">
+                    </div>
+                    <div class="activity-content">
+                        <h3 class="activity-title">2024 송년회</h3>
+                        <p class="activity-date">2024년 12월 예정</p>
+                        <p class="activity-description">
+                            한 해 동안의 활동을 정리하고 회원사들의 성과를 축하하는 송년 행사입니다. 
+                            우수 회원사 포상과 시흥시 포상 수여식도 함께 진행되며, 
+                            다음 해의 계획을 공유하고 네트워킹하는 뜻깊은 자리가 될 것입니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 회원사 섹션 -->
+        <section id="companies" class="companies-section">
+            <h2 class="section-title">시흥XZ청년단 회원사</h2>
+            <p class="section-description">함께 성장하는 시흥시 청년 기업들</p>
+            
+            <div class="companies-stats">
+                <div class="stat-item">
+                    <div class="stat-number">46</div>
+                    <div class="stat-label">총 회원사</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12+</div>
+                    <div class="stat-label">산업 분야</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">세대 구분</div>
+                </div>
+            </div>
+            
+            <div class="industry-cards">
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fas fa-industry"></i></div>
+                    <div>제조업</div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div>정보통신</div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fas fa-gavel"></i></div>
+                    <div>서비스업</div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div>교육업</div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fas fa-building"></i></div>
+                    <div>건설업</div>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <div>도소매</div>
+                </div>
+            </div>
+            
+            <div class="companies-message">
+                <p>시흥XZ청년단은 다양한 산업 분야의 청년 기업가들이 모인 네트워크입니다. LED 조명부터 특허법 서비스, 소프트웨어 개발까지 폭넓은 사업 분야를 아우르고 있어 회원사 간 시너지 창출과 협업의 기회가 풍부합니다. 시흥XZ청년단에 가입하시면 귀사의 비즈니스 성장에 실질적인 도움이 될 다양한 인맥과 정보를 얻으실 수 있습니다.</p>
+            </div>
+        </section>
+
+        <section id="benefits" class="benefits-section">
+            <h2 class="section-title">정회원 혜택 상세 안내</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>커뮤니티 활동</h3>
+                    <p>시흥 지역 내 다양한 청년들과 교류하며 인맥을 쌓을 수 있습니다.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>오프라인 행사</h3>
+                    <p>매월 진행되는 네트워킹 모임, 워크샵, 세미나에 무료로 참여할 수 있습니다.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>맞춤형 멘토링</h3>
+                    <p>각 분야 전문가들의 1:1 멘토링을 통해 커리어 성장을 도모할 수 있습니다.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>취업 지원</h3>
+                    <p>이력서 첨삭, 모의 면접, 지역 기업 채용 정보 우선 제공 등 취업 지원 서비스를 받을 수 있습니다.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>제휴 혜택</h3>
+                    <p>시흥 지역 내 카페, 식당, 문화시설 등 다양한 제휴업체에서 할인 혜택을 받을 수 있습니다.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>자기계발 기회</h3>
+                    <p>정기적인 스터디 그룹과 프로젝트 참여 기회를 통해 실무 경험을 쌓을 수 있습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <h2 class="section-title">회원 후기</h2>
+            
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"시흥XZ청년단 정회원으로 활동하면서 다양한 분야의 청년들을 만나고 네트워킹할 수 있었습니다. 특히 CEO 특강 시리즈가 창업 준비에 큰 도움이 되었어요!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p><strong>김민지</strong> | 정회원 6개월</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"처음에는 온라인 회원으로 시작했지만, 정회원으로 전환한 후 훨씬 더 많은 혜택과 기회를 얻을 수 있었습니다. 월례 네트워킹 모임을 통해 좋은 비즈니스 파트너까지 만났어요!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p><strong>이준호</strong> | 정회원 1년</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="signup" class="signup-section">
+            <h2 class="section-title">지금 바로 시작하세요</h2>
+            <p class="section-description">당신의 성장을 위한 최고의 선택</p>
+            
+            <div class="cta-buttons">
+                <a href="#" class="cta-button secondary">온라인 회원 가입</a>
+                <a href="#" class="cta-button primary">정회원 가입</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>시흥XZ청년단</h3>
+                <p>경기도 시흥시 청년들의 네트워킹과 성장을 위한 커뮤니티</p>
+                <p>이메일: info@siheungxz.org</p>
+                <p>대표번호: 010-3569-4693</p>
+            </div>
+            <div class="footer-links">
+                <h3>빠른 링크</h3>
+                <ul>
+                    <li><a href="#membership-comparison">회원 비교</a></li>
+                    <li><a href="#activities">활동 소개</a></li>
+                    <li><a href="#companies">회원사</a></li>
+                    <li><a href="#benefits">혜택 안내</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 시흥XZ청년단. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+    // 파티클 생성
+    document.addEventListener('DOMContentLoaded', function() {
+        const particlesContainer = document.getElementById('particles');
+        const particleCount = 30;
+        
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            
+            // 랜덤 위치 및 크기
+            const size = Math.random() * 6 + 2;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.top = `${Math.random() * 100}%`;
+            
+            // 랜덤 애니메이션
+            particle.style.animation = `float ${Math.random() * 10 + 5}s linear infinite`;
+            
+            particlesContainer.appendChild(particle);
+        }
+    });
+    
+    // 카운트다운 타이머 설정
+    document.addEventListener('DOMContentLoaded', function() {
+        // 목표 날짜: 2025년 3월 31일 24시 (한국 시간)
+        const targetDate = new Date('2025-03-31T23:59:59+09:00').getTime();
+        
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+            
+            if (distance < 0) {
+                // 시간이 지났을 경우
+                document.querySelector('.countdown-container').innerHTML = '<h3>이벤트가 종료되었습니다</h3>';
+                return;
+            }
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // 카운트다운 업데이트
+            document.querySelectorAll('.flip-unit')[0].querySelector('.flip-card-front').innerText = days;
+            document.querySelectorAll('.flip-unit')[1].querySelector('.flip-card-front').innerText = hours.toString().padStart(2, '0');
+            document.querySelectorAll('.flip-unit')[2].querySelector('.flip-card-front').innerText = minutes.toString().padStart(2, '0');
+            document.querySelectorAll('.flip-unit')[3].querySelector('.flip-card-front').innerText = seconds.toString().padStart(2, '0');
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    });
+
+    // 결제 토글 스위치
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleSwitch = document.querySelector('.toggle-switch');
+        const toggleLabels = document.querySelectorAll('.toggle-label');
+        
+        toggleSwitch.addEventListener('click', function() {
+            this.classList.toggle('checked');
+            toggleLabels.forEach(label => label.classList.toggle('active'));
+        });
+    });
+    </script>
+</body>
+</html>
