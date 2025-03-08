@@ -149,3 +149,27 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 3000);
     }
 });
+// 전화 연결 기능
+document.addEventListener('DOMContentLoaded', function() {
+    // data-phone 속성이 있는 모든 버튼에 전화 연결 기능 추가
+    const callButtons = document.querySelectorAll('[data-phone="true"]');
+    
+    callButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault(); // 기본 동작 방지 (페이지 상단으로 이동하는 것 방지)
+            
+            const phoneNumber = '010-3569-4693';
+            
+            // 모바일 기기 확인
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            
+            if (isMobile) {
+                // 모바일 기기에서는 전화 앱 실행
+                window.location.href = `tel:${phoneNumber}`;
+            } else {
+                // 데스크톱에서는 알림 표시
+                alert(`가입 문의: ${phoneNumber}로 전화해 주세요.`);
+            }
+        });
+    });
+});
