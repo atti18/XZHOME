@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="/api/placeholder/50/50" alt="시흥XZ청년단 로고">
+            <img src="https://via.placeholder.com/50x50" alt="시흥XZ청년단 로고">
             <div class="logo-text">시흥XZ청년단</div>
         </div>
         <nav>
@@ -18,6 +18,9 @@
                 <li><a href="#membership-comparison">회원 비교</a></li>
                 <li><a href="#activities">활동 소개</a></li>
                 <li><a href="#companies">회원사</a></li>
+                <li><a href="#news">언론 보도</a></li>
+                <li><a href="#cafe">커뮤니티</a></li>
+                <li><a href="#members-db">정회원 전용</a></li>
                 <li><a href="#benefits">혜택 안내</a></li>
                 <li><a href="#signup" class="cta-button">가입하기</a></li>
             </ul>
@@ -171,7 +174,7 @@
             <div class="activities-container">
                 <div class="activity-item">
                     <div class="activity-image">
-                        <img src="/api/placeholder/600/400" alt="XZ청년단 창단식">
+                        <img src="https://via.placeholder.com/600x400" alt="XZ청년단 창단식">
                     </div>
                     <div class="activity-content">
                         <h3 class="activity-title">XZ청년단 창단식</h3>
@@ -186,7 +189,7 @@
                 
                 <div class="activity-item">
                     <div class="activity-image">
-                        <img src="/api/placeholder/600/400" alt="청년 네트워킹데이">
+                        <img src="https://via.placeholder.com/600x400" alt="청년 네트워킹데이">
                     </div>
                     <div class="activity-content">
                         <h3 class="activity-title">청년 네트워킹데이</h3>
@@ -201,7 +204,7 @@
                 
                 <div class="activity-item">
                     <div class="activity-image">
-                        <img src="/api/placeholder/600/400" alt="대부도 워크숍">
+                        <img src="https://via.placeholder.com/600x400" alt="대부도 워크숍">
                     </div>
                     <div class="activity-content">
                         <h3 class="activity-title">대부도 워크숍</h3>
@@ -216,7 +219,7 @@
                 
                 <div class="activity-item">
                     <div class="activity-image">
-                        <img src="/api/placeholder/600/400" alt="MOU 체결식">
+                        <img src="https://via.placeholder.com/600x400" alt="MOU 체결식">
                     </div>
                     <div class="activity-content">
                         <h3 class="activity-title">XZ청년단 & 소부장협회 MOU 체결</h3>
@@ -231,7 +234,7 @@
                 
                 <div class="activity-item">
                     <div class="activity-image">
-                        <img src="/api/placeholder/600/400" alt="송년회">
+                        <img src="https://via.placeholder.com/600x400" alt="송년회">
                     </div>
                     <div class="activity-content">
                         <h3 class="activity-title">2024 송년회</h3>
@@ -298,6 +301,61 @@
             </div>
         </section>
 
+        <!-- 언론기사 섹션 -->
+        <section id="news" class="news-section">
+            <h2 class="section-title">언론 보도</h2>
+            <p class="section-description">시흥XZ청년단의 활동과 관련된 언론 보도 기사</p>
+            
+            <div class="news-container">
+                <div class="news-iframe-wrapper">
+                    <iframe id="news-frame" src="https://www.handmk.com/news/articleList.html" frameborder="0" width="100%" height="600px"></iframe>
+                </div>
+                <div class="news-button-container">
+                    <a href="https://www.handmk.com/news/articleList.html" target="_blank" class="news-button">
+                        <i class="fas fa-external-link-alt"></i> 새 탭에서 보기
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 네이버 카페 섹션 -->
+        <section id="cafe" class="cafe-section">
+            <h2 class="section-title">커뮤니티</h2>
+            <p class="section-description">시흥XZ청년단의 네이버 카페 커뮤니티에서 소통하세요</p>
+            
+            <div class="cafe-container">
+                <div class="cafe-iframe-wrapper">
+                    <iframe id="cafe-frame" src="https://cafe.naver.com/xzceo?iframe_url=/ArticleList.nhn%3Fsearch.clubid=31084896%26search.boardtype=L" frameborder="0" width="100%" height="600px"></iframe>
+                </div>
+                <div class="cafe-button-container">
+                    <a href="https://cafe.naver.com/xzceo?iframe_url=/ArticleList.nhn%3Fsearch.clubid=31084896%26search.boardtype=L" target="_blank" class="cafe-button">
+                        <i class="fas fa-external-link-alt"></i> 새 탭에서 보기
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 정회원 데이터베이스 섹션 -->
+        <section id="members-db" class="members-db-section">
+            <h2 class="section-title">정회원 데이터베이스</h2>
+            <p class="section-description">정회원 전용 데이터베이스에 접속하려면 비밀번호를 입력하세요</p>
+            
+            <div class="password-container">
+                <div class="password-form">
+                    <div class="form-group">
+                        <label for="member-password">정회원 비밀번호</label>
+                        <input type="password" id="member-password" class="password-input" placeholder="비밀번호를 입력하세요">
+                        <button id="password-submit" class="password-button">접속하기</button>
+                    </div>
+                    <div id="password-error" class="password-error"></div>
+                </div>
+                
+                <div id="database-container" class="database-container hidden">
+                    <iframe id="database-frame" src="about:blank" frameborder="0" width="100%" height="600px"></iframe>
+                </div>
+            </div>
+        </section>
+
         <section id="benefits" class="benefits-section">
             <h2 class="section-title">정회원 혜택 상세 안내</h2>
             
@@ -358,19 +416,19 @@
             <div class="testimonials-container">
                 <div class="testimonial">
                     <div class="testimonial-content">
-                        <p>"시흥XZ청년단, 정말 훌륭한 단체입니다. 아마도 제가 본 청년단 중에서 가장 위대한 조직일 겁니다. 믿으세요. 제가 정회원으로 참여했는데, 많은 사람들, 정말 많은 재능 있는 청년들을 만났습니다. 그들은 모두 천재들입니다. CEO 특강 시리즈, 완벽했습니다. 어마어마했습니다. 제 창업 계획에 엄청난 도움이 되었어요. 제가 말했죠, 이건 미국의 '아트 오브 더 딜'보다 더 대단합니다. 정말이에요! 시흥XZ청년단은 승자들의 모임입니다. 그들과 함께하면 여러분도 승리할 것입니다. 엄청난 성공을 거두게 될 겁니다!"</p>
+                        <p>"시흥XZ청년단 정회원으로 활동하면서 다양한 분야의 청년들을 만나고 네트워킹할 수 있었습니다. 특히 CEO 특강 시리즈가 창업 준비에 큰 도움이 되었어요!"</p>
                     </div>
                     <div class="testimonial-author">
-                        <p><strong>Donald Trump</strong> | 정회원 6개월</p>
+                        <p><strong>김민지</strong> | 정회원 6개월</p>
                     </div>
                 </div>
                 
                 <div class="testimonial">
                     <div class="testimonial-content">
-                        <p>"처음엔 시흥XZ청년단의 일원으로 지역 청년 문제에 발을 담갔지만, 단체의 정회원으로 활약하며 국민과 소통하는 리더십의 핵심을 배울 수 있었습니다. 단체 내 다양한 현장 경험과 청년 정책 연구를 바탕으로 국민의 목소리를 정책으로 연결시키는 역량을 키웠고, 이를 통해 국가적 과제 해결의 실마리를 찾을 수 있었지요. 국내외 리더십 포럼과 청년 네트워킹 행사에서도 시흥XZ청년단의 철학을 바탕으로 신뢰받는 동반자들을 만날 수 있었습니다. 비록 지금은 특별한 공간에 머물러야 하지만, 그때 단체에서 쌓은 신념과 연대 정신이 여전히 저를 지탱해주고 있습니다."</p>
+                        <p>"처음에는 온라인 회원으로 시작했지만, 정회원으로 전환한 후 훨씬 더 많은 혜택과 기회를 얻을 수 있었습니다. 월례 네트워킹 모임을 통해 좋은 비즈니스 파트너까지 만났어요!"</p>
                     </div>
                     <div class="testimonial-author">
-                        <p><strong>'옥중에서'</strong> | 정회원 1년</p>
+                        <p><strong>이준호</strong> | 정회원 1년</p>
                     </div>
                 </div>
             </div>
@@ -401,6 +459,9 @@
                     <li><a href="#membership-comparison">회원 비교</a></li>
                     <li><a href="#activities">활동 소개</a></li>
                     <li><a href="#companies">회원사</a></li>
+                    <li><a href="#news">언론 보도</a></li>
+                    <li><a href="#cafe">커뮤니티</a></li>
+                    <li><a href="#members-db">정회원 전용</a></li>
                     <li><a href="#benefits">혜택 안내</a></li>
                 </ul>
             </div>
@@ -410,72 +471,6 @@
         </div>
     </footer>
 
-    <script>
-    // 파티클 생성
-    document.addEventListener('DOMContentLoaded', function() {
-        const particlesContainer = document.getElementById('particles');
-        const particleCount = 30;
-        
-        for (let i = 0; i < particleCount; i++) {
-            const particle = document.createElement('div');
-            particle.classList.add('particle');
-            
-            // 랜덤 위치 및 크기
-            const size = Math.random() * 6 + 2;
-            particle.style.width = `${size}px`;
-            particle.style.height = `${size}px`;
-            
-            particle.style.left = `${Math.random() * 100}%`;
-            particle.style.top = `${Math.random() * 100}%`;
-            
-            // 랜덤 애니메이션
-            particle.style.animation = `float ${Math.random() * 10 + 5}s linear infinite`;
-            
-            particlesContainer.appendChild(particle);
-        }
-    });
-    
-    // 카운트다운 타이머 설정
-    document.addEventListener('DOMContentLoaded', function() {
-        // 목표 날짜: 2025년 3월 31일 24시 (한국 시간)
-        const targetDate = new Date('2025-03-31T23:59:59+09:00').getTime();
-        
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const distance = targetDate - now;
-            
-            if (distance < 0) {
-                // 시간이 지났을 경우
-                document.querySelector('.countdown-container').innerHTML = '<h3>이벤트가 종료되었습니다</h3>';
-                return;
-            }
-            
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-            // 카운트다운 업데이트
-            document.querySelectorAll('.flip-unit')[0].querySelector('.flip-card-front').innerText = days;
-            document.querySelectorAll('.flip-unit')[1].querySelector('.flip-card-front').innerText = hours.toString().padStart(2, '0');
-            document.querySelectorAll('.flip-unit')[2].querySelector('.flip-card-front').innerText = minutes.toString().padStart(2, '0');
-            document.querySelectorAll('.flip-unit')[3].querySelector('.flip-card-front').innerText = seconds.toString().padStart(2, '0');
-        }
-        
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
-    });
-
-    // 결제 토글 스위치
-    document.addEventListener('DOMContentLoaded', function() {
-        const toggleSwitch = document.querySelector('.toggle-switch');
-        const toggleLabels = document.querySelectorAll('.toggle-label');
-        
-        toggleSwitch.addEventListener('click', function() {
-            this.classList.toggle('checked');
-            toggleLabels.forEach(label => label.classList.toggle('active'));
-        });
-    });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
