@@ -77,7 +77,7 @@ nav a:hover {
 
 /* 히어로 섹션 */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/api/placeholder/1600/800') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1600x800') no-repeat center center;
     background-size: cover;
     color: white;
     text-align: center;
@@ -707,6 +707,175 @@ main {
     border-left: 4px solid var(--primary-color);
 }
 
+/* 언론기사 섹션 스타일 */
+.news-section {
+    padding: 60px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 60px 0;
+}
+
+.news-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.news-iframe-wrapper {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.news-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.news-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.news-button:hover {
+    background-color: var(--primary-dark);
+}
+
+/* 네이버 카페 섹션 스타일 */
+.cafe-section {
+    padding: 60px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 60px 0;
+}
+
+.cafe-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cafe-iframe-wrapper {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.cafe-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cafe-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cafe-button:hover {
+    background-color: var(--primary-dark);
+}
+
+/* 정회원 데이터베이스 섹션 스타일 */
+.members-db-section {
+    padding: 60px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 60px 0;
+}
+
+.password-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.password-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--dark-gray);
+}
+
+.password-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.password-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.password-button:hover {
+    background-color: var(--primary-dark);
+}
+
+.password-error {
+    color: #ff5252;
+    margin-top: 10px;
+    font-size: 0.9em;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.password-error.show {
+    height: auto;
+}
+
+.database-container {
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: opacity 0.5s ease;
+}
+
+.hidden {
+    display: none;
+}
+
 /* 회원 후기 섹션 */
 .testimonials-section {
     padding: 60px 0;
@@ -863,5 +1032,32 @@ footer {
     
     .event-features {
         flex-direction: column;
+    }
+    
+    nav ul {
+        gap: 10px;
+        font-size: 0.9em;
+        flex-wrap: wrap;
+    }
+    
+    .flip-unit {
+        width: 40px;
+        height: 60px;
+    }
+    
+    .flip-card-front, .flip-card-back {
+        font-size: 1.8em;
+    }
+    
+    .flip-divider {
+        font-size: 1.5em;
+    }
+    
+    .password-form {
+        padding: 20px;
+    }
+    
+    .password-input, .password-button {
+        width: 100%;
     }
 }
